@@ -1,4 +1,4 @@
-@import "tailwindcss"
+@import "tailwindcss";
 
 @theme {
   --color-background: hsl(0, 0%, 100%);
@@ -40,6 +40,11 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+}
+@utility container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 body {
