@@ -7,7 +7,6 @@ interface OverlayProps {
     className: string
 }
 
-
 export const Overlay = ({ children, title, subtitle, className } : OverlayProps) => {
     return <div className={`absolute w-full flex items-center text-center ${className}`}>
         <div className='flex flex-col items-center text-white w-[388px]'>
