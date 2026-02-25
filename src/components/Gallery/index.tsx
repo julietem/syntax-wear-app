@@ -1,45 +1,89 @@
-import galeriaHomem from "@/assets/images/galeria-homem.jpg";
-import tenisRoxo from "@/assets/images/galeria-tenis-roxo.jpg";
-import tenisCinza from "@/assets/images/galeria-tenis-cinza.jpg";
-import tenisBrancoEPreto from "@/assets/images/galeria-tenis-branco-e-preto.jpg";
-import tenisColorido from "@/assets/images/galeria-tenis-colorido.jpg";
-import modelo from "@/assets/images/galeria-modelo.jpg";
-
+import galeriaHomem from "../../assets/images/galeria-homem.jpg";
+import galeriaTenisRoxo from "../../assets/images/galeria-tenis-roxo.jpg";
+import galeriaModelo from "../../assets/images/galeria-modelo.jpg";
+import galeriaTenisColorido from "../../assets/images/galeria-tenis-colorido.jpg";
+import galeriaTenisBrancoPeto from "../../assets/images/galeria-tenis-branco-e-preto.jpg";
+import galeriaTenisCinza from "../../assets/images/galeria-tenis-cinza.jpg";
+import styles from "./Gallery.module.css";
+import { Overlay } from "../Overlay";
+import { Button } from "../Button";
 
 export const Gallery = () => {
   return (
-    <section className="container grid grid-cols-12 gap-2.5 md:gap-7 mb-10">
-      <div className="col-span-12 row-span-3 md:col-span-6 order-1">
-        <img
-          className="w-full h-full object-cover rounded-[20px]"
-          src={galeriaHomem}
-          alt="Banner"
-        />
-      </div>
+   
+    <div className="container">
+      
+      <div className={styles.galleryGrid}>
+      
+        <div
+          className={`${styles.imageCard} ${styles.highlight} relative rounded-[20px] overflow-hidden`}
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={galeriaHomem}
+            alt="Krypton One - Estilo urbano com atitude"
+          />
 
-      <div className="col-span-12 row-span-1 md:col-span-6 order-6 md:order-2">
-        <img
-          className="w-full h-full object-cover rounded-[20px]"
-          src={tenisRoxo}
-          alt="Tênis Roxo"
-        />
-      </div>
+          <Overlay
+            title="Kripton One"
+            subtitle="Estilo urbano com atitude"
+            className="inset-0 justify-center"
+          >
+            <Button variant="secondary">Feminino</Button>
+            <Button variant="secondary">Masculino</Button>
+          </Overlay>
+        </div>
 
-      <div className="col-span-6 row-span-6 md:col-span-3 order-3">
-        <img className="w-full h-full object-cover rounded-[20px]" src={modelo} alt="Modelo" />
-      </div>
+        <div
+          className={`${styles.imageCard} ${styles.sneakerPurple} relative rounded-[20px] overflow-hidden`}
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={galeriaTenisRoxo}
+            alt="Tênis Roxo"
+          />
+        </div>
 
-      <div className="col-span-6 row-span-3 md:col-span-3 order-4">
-        <img src={tenisColorido} alt="Tênis Colorido" />
-      </div>
+        <div
+          className={`${styles.imageCard} ${styles.model} relative rounded-[20px] overflow-hidden`}
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={galeriaModelo}
+            alt="Modelo Feminina"
+          />
+        </div>
 
-      <div className=" col-span-12 row-span-4 md:col-span-6 order-2 md:order-5">
-        <img className="w-full h-full object-cover rounded-[20px]" src={tenisBrancoEPreto} alt="Tênis Preto e Branco" />
-      </div>
+        <div
+          className={`${styles.imageCard} ${styles.sneakerColor} relative rounded-[20px] overflow-hidden`}
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={galeriaTenisColorido}
+            alt="Tênis Colorido"
+          />
+        </div>
 
-      <div className="col-span-6 row-span-3 md:col-span-3 order-4 md:order-6">
-        <img className="w-full h-full object-cover rounded-[20px]" src={tenisCinza} alt="Tênis Cinza" />
+        <div
+          className={`${styles.imageCard} ${styles.sneakerWhite} relative rounded-[20px] overflow-hidden`}
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={galeriaTenisBrancoPeto}
+            alt="Tênis Branco e Preto"
+          />
+        </div>
+
+        <div
+          className={`${styles.imageCard} ${styles.sneakerSilver} relative rounded-[20px] overflow-hidden`}
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={galeriaTenisCinza}
+            alt="Tênis Cinza"
+          />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
