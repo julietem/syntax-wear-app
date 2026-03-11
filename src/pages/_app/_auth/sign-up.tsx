@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { RegisterForm } from "../../components/RegisterForm";
-import { Logo } from "../../components/Logo";
-import { Separator } from "../../components/Separator";
+import { RegisterForm } from "../../../components/RegisterForm";
+import { Logo } from "../../../components/Logo";
+import { Separator } from "../../../components/Separator";
 import GoogleIcon from "@/assets/images/google-icon.png";
 
 export const Route = createFileRoute("/_app/_auth/sign-up")({
@@ -24,7 +24,7 @@ function RouteComponent() {
         </button>
 
         <p className="text-sm text-gray-600 mt-6 text-center">
-          Já tem uma conta?{" "}
+          Já tem uma conta?
           <a href="/sign-in" className="text-[#5433EB] hover:underline">
             Entrar
           </a>

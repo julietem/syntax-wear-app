@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { LoginForm } from "../../components/LoginForm";
-import { Logo } from "../../components/Logo";
+import { LoginForm } from "../../../components/LoginForm";
+import { Logo } from "../../../components/Logo";
 import GoogleIcon from "@/assets/images/google-icon.png";
-import { Separator } from "../../components/Separator";
+import { Separator } from "../../../components/Separator";
 
 export const Route = createFileRoute("/_app/_auth/sign-in")({
   component: RouteComponent,
