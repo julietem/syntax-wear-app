@@ -1,4 +1,4 @@
-import Banner from '@/assets/images/banner.jpg';
+import Banner from '../assets/images/banner.jpg';
 import { Button } from '../Button';
 import { Overlay } from '../Overlay';
 import { useRouter } from "@tanstack/react-router";
