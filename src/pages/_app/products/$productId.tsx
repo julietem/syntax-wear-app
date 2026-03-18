@@ -15,7 +15,7 @@ head: ({ params }) => {
     (product) => product.id === Number(params.productId)
   );
 
-  const titlo = filteredProduct 
+  const title = filteredProduct 
   ? `${filteredProduct.name}- Produtos - SyntaxWear` 
   : "produto não encontrado - Produtos - SyntaxWear";
 
