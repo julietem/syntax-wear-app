@@ -1,4 +1,3 @@
 { "routes": [
-    {"hadler": "filesystem"},
     {"src": "/(.*)", "dest": "/"}
 ] }
