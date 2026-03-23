@@ -11,7 +11,7 @@ export default defineConfig({
     autoCodeSplitting: true,
     generatedRouteTree: "./src/router-tree-gen.ts",
     routesDirectory:"./src/pages",
-    routeToken:"layout",
+    routeToken:"layout"
   }), 
   react(),
   tailwindcss()
